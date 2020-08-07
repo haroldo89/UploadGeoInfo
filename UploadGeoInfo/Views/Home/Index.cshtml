@@ -1,0 +1,39 @@
+﻿<link href="~/Content/Views/Home/Index.css" rel="stylesheet" />
+<link href="~/Content/FileUpload/fileUploadBootstrap.css" rel="stylesheet" type="text/css" />
+<link href="~/Content/FileUpload/jquery.fileupload.css" rel="stylesheet" type="text/css" />
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="~/Scripts/FileUpload/jquery.ui.widget.js"></script>
+<script src="~/Scripts/FileUpload/jquery.fileupload.js"></script>
+<script src="~/Scripts/CustomControls/epolys.js"></script>
+<script src="~/Scripts/CustomControls/GoogleMapsDistanceHelper.js"></script>
+<script src="~/Scripts/CustomControls/GoogleMapsHelper.js"></script>
+<script src="~/Scripts/Views/Home/Index.js"></script>
+
+<script>
+    $(document).ready(function () {
+        UploadGeoFence.initializeComponents();
+    });
+</script>
+<div id="floating-panel">
+
+    <table style="width: 100%; height: 100%;">
+        <tr>
+            <td style="text-align: left; width: 80%;">
+                <label>Seleccionar</label>
+                &nbsp;
+                <label id="lblFileContainer" class="fileContainer">
+                    ...
+                    <input id="fileUpload" type="file" name="files[]" multiple>
+                </label>
+            </td>
+        </tr>
+    </table>
+    <div id="divProgressBar" class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+            <label id="lblPercentageProgress" style="color: white; padding-top: 5px; font-size: 15pt; vertical-align: bottom;"></label>
+        </div>
+    </div>
+</div>
+
+<div id="map" style="height:100%;width:100%;"></div>

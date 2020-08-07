@@ -1,0 +1,29 @@
+﻿/*Modificacion para el boton de seleccionar imagen y la barra de progreso */
+.btn-uploadFile-success
+{
+    color: #ffffff;
+    background-color: #5cb85c;
+    border-color: #419641;
+}
+
+.btn-uploadFile
+{
+    display: inline-block;
+    /*padding: 2px 12px 6px 12px;*/
+    /*padding: 6px 12px;*/
+    margin-bottom: 0;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+
+.progress
+{
+    height: 29px;
+}
+
+.progress-bar
+{
+    height: 100%;
+    background-color: #428bca;
+    transition: width 0.6s ease;
+}
